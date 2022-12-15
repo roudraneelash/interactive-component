@@ -4,7 +4,7 @@ const front = document.querySelector(".front");
 const back = document.querySelector(".back");
 const number = document.querySelector(".number");
 
-var rating = 10;
+var rating = 0;
 for (let i = 0; i < nums.length; i++) {
   nums[i].addEventListener("click", function () {
     rating = nums[i].innerHTML;
