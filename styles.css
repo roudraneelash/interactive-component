@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: hsl(216, 12%, 8%);
+}
+main {
+  position: relative;
+}
+.card {
+  width: 40rem;
+  height: 40rem;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  margin: 1.2rem;
+}
+.star-container {
+  display: flex;
+}
+.star {
+  padding: 1.2rem;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.heading {
+  font-weight: 700;
+  color: #fff;
+  font-size: 3rem;
+}
+.text {
+  font-weight: 400;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.num {
+  font-size: 1.6rem;
+  padding: 1.2rem 1.8rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.num:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: #fff;
+}
+.num:focus {
+  background-color: grey;
+  color: #fff;
+}
+.btn-submit {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  background-color: hsl(25, 97%, 53%);
+  padding: 1.6rem 2.4rem;
+  width: 100%;
+  border-radius: 2.6rem;
+  cursor: pointer;
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+.front {
+  display: none;
+}
+.back {
+  align-items: center;
+  display: none;
+}
+.back p {
+  text-align: center;
+}
+.answer {
+  background-color: #333;
+  padding: 0.8rem;
+  color: hsl(25, 97%, 53%);
+  border-radius: 2.4rem;
+}
+.active {
+  display: flex;
+}
